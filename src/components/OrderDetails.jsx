@@ -15,8 +15,8 @@ const OrderDetails = () => {
   return (
     
     <>
-    <div className="card mx-2 my-2  " style={{ height: "320px", width: "350px" }}>
-    <div className="h4  text-start px-2 my-3">Order Summary</div>
+    <div className="card mx-2 my-2  overflow-hidden" style={{ height: "320px", width: "320px" }}>
+    <div className="h4  text-start px-2 my-3 " >Order Summary</div>
     <hr />
     <table  >
       <thead>
@@ -45,7 +45,7 @@ const OrderDetails = () => {
 
       <tr>
         <th colSpan="2" className="px-3  " ><b>Total Amount</b></th>
-        <td><b>$ {currancyFormater.format(count)}</b></td>
+        <td><b> {currancyFormater.format(count)}</b></td>
 
       </tr>
       </tbody>

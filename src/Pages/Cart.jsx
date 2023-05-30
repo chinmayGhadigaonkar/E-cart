@@ -24,7 +24,7 @@ const Cart = () => {
       
       <div className="container-md" >
         <div className="row">
-          <div className="col-md-7 col-sm-12">
+          <div className="col-md-12 col-lg-8 col-sm-11">
 
         <div className="card my-2 ">
           <div className="h4  text-start px-2 my-3">Item</div>
@@ -38,10 +38,13 @@ const Cart = () => {
             )})}
         </div>
           </div>
-        <div className='col-md-3 col-sm-12'>
+          
+
+        <div className='col-md-6 col-lg-4 col-sm-4 '>
 
        <OrderDetails></OrderDetails>
-        </div>
+       
+          </div>
         </div>
 
       </div>

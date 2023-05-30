@@ -26,7 +26,7 @@ const Item = (props) => {
     <>
     {/* <div className="mx-4  col-md-3 "    > */}
 
-    <div className="card  object-fit-cover border-2 border-dark rounded-2   " style={{ width: "18rem", height: "400px" }}>
+    <div className="card  object-fit-cover border-2 border-grey rounded-2   " style={{ width: "18rem", height: "400px" }}>
         <img src={img} className="card-img-top text-center my-2 " alt="..." style={{ width: "246px", height: "175px"  ,margin:"0px auto" }} />
         <div className="card-body">
           <h5 className="card-title">{ptitle.length>5?ptitle.slice(0,35) +" ..." : ptitle}</h5>

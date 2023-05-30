@@ -31,8 +31,8 @@ const CartCard = (props) => {
                     <img src={image} height="120px" width="150px" alt="...." srcSet="" />
                 </div>
                 <div className="porduct-info mx-2 px-2">
-                    <h1 className='productname h4'>{title}</h1>
-                    <h5 className="price h5">$ {price}</h5>
+                    <h1 className='productname h5'>{title.length>35?title.slice(0,35)+" ...":title}</h1>
+                    <h5 className="price h6">$ {price}</h5>
                     <div className="item-count">
                         <button className='border-none  btn-outline-none' onClick={() => {
                             if (QuantityValue !== 5) {
