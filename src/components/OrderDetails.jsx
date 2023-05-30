@@ -51,7 +51,7 @@ const OrderDetails = () => {
       </tbody>
 
     </table>
-    <button className='btn btn-danger my-2 mx-2'>Go To CheckOut</button>
+    <button className='btn btn-dark my-2 mx-2'>Go To CheckOut</button>
 
   </div>
   </>

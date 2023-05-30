@@ -1,8 +1,9 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import OrderDetails from '../components/orderDetails'
+
 import CartCard from '../components/CartCard'
 import EmptyCart from '../components/EmptyCart'
+import OrderDetails from '../components/OrderDetails'
 
 
 
@@ -19,11 +20,13 @@ const Cart = () => {
 
   return (
     <>
-      <h2 className='text-center '>Your Cart</h2>
-      <hr />
-      <div className="container d-flex flex-wrap" >
+      <h2 className='text-center my-2 '>Your Cart</h2>
+      
+      <div className="container-md" >
+        <div className="row">
+          <div className="col-md-7 col-sm-12">
 
-        <div className="card ">
+        <div className="card my-2 ">
           <div className="h4  text-start px-2 my-3">Item</div>
           <hr />
           {Product.map((product) => {
@@ -34,7 +37,13 @@ const Cart = () => {
               </>
             )})}
         </div>
-        <OrderDetails></OrderDetails>
+          </div>
+        <div className='col-md-3 col-sm-12'>
+
+       <OrderDetails></OrderDetails>
+        </div>
+        </div>
+
       </div>
     </>
   )

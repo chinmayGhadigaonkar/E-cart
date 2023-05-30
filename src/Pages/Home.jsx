@@ -53,7 +53,7 @@ const Home = () => {
         <h1 className='text-center'>Products </h1>
 
         <div>
-        <div className="d-flex gap-2 justify-content-center py-5">
+        <div className="d-flex gap-2 justify-content-center py-5 flex-wrap">
 
         <button className="btn btn-dark rounded-pill px-3" type="button" onClick={()=>{ filterFun("All")
         }}>All</button>
@@ -72,12 +72,12 @@ const Home = () => {
 
 
         {loading && <Spinnner></Spinnner>} 
-        <div className="container"  >
-        <div className="row overflow-hideen gap-2  ">
+        <div className="container-sm"  >
+        <div className="row overflow-hideen   ">
           {filterdata.map((product) => {
             return (
               <>
-              <div className='col-lg-3 mx-4 my-2'>
+              <div className='col-lg-4 col-md-6 col-sm-12  my-2'>
                 <Item  key={product.id} product={product} prating ={product.rating.rate} previews={product.rating.count} img ={product.image} ptitle={product.title} pprice={product.price} ></Item> 
               </div>
               </>
